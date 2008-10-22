@@ -22,7 +22,14 @@ object JSONTest {
           case JSONString(x) => printf("Description = '%s'%n", x)
         }
         values("a decimal") match {
-          case JSONNumber(42.666) => printf("Matched 42.666") 
+          case JSONNumber(42.666) => println("Matched 42.666") 
+        }
+        values("Image") match {
+          case JSONObject(imageValues) => {
+            imageValues("IDs") match {
+              case JSONArray(List(JSONNumber(116), JSONNumber(x), _*)) => printf("Matched IDs list, 2nd value = %d%n", x.toInt)
+            }
+          }
         }
       }
     }
