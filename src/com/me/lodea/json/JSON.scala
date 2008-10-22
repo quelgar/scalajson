@@ -53,7 +53,7 @@ class JSON extends JavaTokenParsers {
 
   def hexDigit: Parser[Int] = "[a-fA-F0-9]".r ^^ { stringWrapper(_)(0).asDigit }
 
-  def validStringChar: Parser[String] = """[^\\"\p{Cntrl}]""".r
+  def validStringChar: Parser[String] = """[^\\"\p{javaISOControl}]""".r
 
 }
 
