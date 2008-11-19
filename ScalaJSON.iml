@@ -11,7 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/src" isTestSource="true" />
     </content>
-    <orderEntry type="library" exported="" name="scala-2.7.2.RC3" level="application" />
+    <orderEntry type="library" name="Scala" level="application" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
