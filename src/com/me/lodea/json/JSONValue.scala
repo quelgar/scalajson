@@ -13,24 +13,19 @@ sealed abstract class JSONValue {
     sw.toString
   }
 
-  def number(default: => Double) = this match {
-    case JSONNumber(n) => n
-    case _ => default
+  def number = this match {
+    case JSONNumber(n) => Some(n)
+    case _ => None
   }
 
-  def number(default: => Int) = this match {
-    case JSONNumber(n) => n.toInt
-    case _ => default
+  def boolean = this match {
+    case JSONBoolean(b) => Some(b)
+    case _ => None
   }
 
-  def boolean(default: => Boolean) = this match {
-    case JSONBoolean(b) => b
-    case _ => default
-  }
-
-  def string(default: => String) = this match {
-    case JSONString(s) => s
-    case _ => default
+  def string = this match {
+    case JSONString(s) => Some(s)
+    case _ => None
   }
 
 }
@@ -47,13 +42,28 @@ final case class JSONArray(listValue: List[JSONValue]) extends JSONValue
 
 final case class JSONObject(objectValue: Map[String, JSONValue]) extends JSONValue {
 
-  def number(name: String, default: => Double) = objectValue.getOrElse(name, JSONNumber(default)).number(default)
+    def number(name: String) = for {
+        value <- objectValue.get(name)
+        number <- value.number
+    } yield number
 
-  def number(name: String, default: => Int) = objectValue.getOrElse(name, JSONNumber(default)).number(default)
+    def number(name: String, default: => Double) = objectValue.getOrElse(name, JSONNumber(default)).number.getOrElse(default)
 
-  def boolean(name: String, default: => Boolean) = objectValue.getOrElse(name, JSONBoolean(default)).boolean(default)
+    def number(name: String, default: => Int) = objectValue.getOrElse(name, JSONNumber(default)).number.getOrElse(default.toDouble).toInt
 
-  def string(name: String, default: => String) = objectValue.getOrElse(name, JSONString(default)).string(default)
+    def boolean(name: String) = for {
+        value <- objectValue.get(name)
+        b <- value.boolean
+    } yield b
+
+    def boolean(name: String, default: => Boolean) = objectValue.getOrElse(name, JSONBoolean(default)).boolean.getOrElse(default)
+
+    def string(name: String) = for {
+        value <- objectValue.get(name)
+        s <- value.string
+    } yield s
+
+    def string(name: String, default: => String) = objectValue.getOrElse(name, JSONString(default)).string.getOrElse(default)
 
 }
 
