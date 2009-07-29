@@ -2,7 +2,14 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ScalaJSON.ipr" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/me/lodea/json/JSONValue.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/me/lodea/json/JSONValue.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/com/me/lodea/json/JSONTest.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/me/lodea/json/JSONTest.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaJSON.iml" afterPath="$PROJECT_DIR$/ScalaJSON.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/com/me/lodea/json/testobject1.json" afterPath="$PROJECT_DIR$/src/test/scala/com/me/lodea/json/testobject1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/me/lodea/json/JSON.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/me/lodea/json/JSON.scala" />
     </list>
     <ignored path="ScalaJSON.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,9 +67,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="JSONValue.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/me/lodea/json/JSONValue.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/me/lodea/json/JSONValue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="17" selection-start="832" selection-end="832" vertical-scroll-proportion="0.3326713">
+            <state line="44" column="22" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4816286">
               <folding />
             </state>
           </provider>
@@ -129,11 +136,33 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ScalaJSON" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ScalaJSON" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="scalajson" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="scala" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -159,7 +188,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="json" />
+          <option name="myItemId" value="main" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -183,17 +212,17 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -398,9 +427,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/me/lodea/json/JSONValue.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/me/lodea/json/JSONValue.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="17" selection-start="832" selection-end="832" vertical-scroll-proportion="0.3326713">
+        <state line="44" column="22" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4816286">
           <folding />
         </state>
       </provider>
@@ -409,6 +438,15 @@
   <component name="masterDetails">
     <option name="states">
       <map>
+        <entry key="Copyright.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
         <entry key="Errors.UI">
           <value>
             <UIState>
@@ -455,6 +493,15 @@
     </option>
     <option name="myStates">
       <map>
+        <entry key="Copyright.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
         <entry key="Errors.UI">
           <value>
             <UIState>
